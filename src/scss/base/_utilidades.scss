@@ -1,3 +1,21 @@
 .text-center {
-    text-align: center;
+  text-align: center;
+}
+.titulo {
+  color: $marron;
+  font-family: $fuente_secundario;
+  font-size: 3.5rem;
+  margin: 0;
+}
+.subtitulo {
+  color: $negro;
+  font-weight: $bold;
+  margin: 1rem 0;
+  font-size: 3.5rem;
+}
+.texto, .nombre,.fecha {
+  color: #53616f;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin-bottom: 3rem;
 }

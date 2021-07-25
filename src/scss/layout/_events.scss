@@ -1,0 +1,35 @@
+.seccion__eventos {
+  .vapor-agua {
+    img {
+      top: 15%;
+      left: 18%;
+      transform: rotate(-20deg);
+      z-index: -1;
+      height: 86%;
+    }
+  }
+  .carta-eventos {
+    .imagen {
+      background: url("/build/img/event.webp");
+      background: contain;
+      background-position: center center;
+    }
+    .nombre, .fecha {
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        text-align: right;
+    }
+    .nombre {
+        font-weight: $bold;
+    }
+  }
+  .woody-spoon {
+    img {
+      top: 64%;
+      right: -3%;
+      transform: rotate(-102deg);
+      -webkit-filter: drop-shadow(4px 4px 5px #222);
+      filter: drop-shadow(4px 4px 5px #222);
+    }
+  }
+}

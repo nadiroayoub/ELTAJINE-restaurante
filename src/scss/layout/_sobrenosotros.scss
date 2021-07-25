@@ -1,0 +1,54 @@
+.seccion__sobrenosotros,
+.seccion__eventos {
+  position: relative;
+  padding: 20rem 0 10rem 0;
+  .carta-sobrenosotros {
+    display: flex;
+    justify-content: space-between;
+    .imagen {
+      flex-basis: calc(40%);
+      overflow: hidden;
+      line-height: 8;
+      background-image: url("/build/img/tajine\ on\ fire.webp");
+      background-size: cover;
+      background-position: center;
+    }
+    .contenido {
+      flex-basis: calc(60%);
+      background-color: $blanco;
+      padding: 4rem 10rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      a {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: $marron;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        &:hover {
+          text-shadow: -0.3px -0.3px 0 $marron, 0.3px -0.3px 0 $marron,
+            -0.3px 0.3px 0 $marron, 0.3px 0.3px 0 $marron;
+        }
+      }
+    }
+  }
+  .rama-arbol {
+    img {
+      position: absolute;
+      right: -6.4rem;
+      bottom: 5rem;
+      width: 20%;
+      transform: rotate(19deg);
+    }
+  }
+  .vapor-agua {
+    img {
+      position: absolute;
+      top: 0;
+    }
+  }
+}

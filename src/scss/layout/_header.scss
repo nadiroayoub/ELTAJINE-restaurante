@@ -1,0 +1,27 @@
+.barra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  p {
+    font-size: 2.5rem;
+  }
+  .navegacion {
+    a {
+      color: $gris;
+      margin-right: 2rem;
+      &.active {
+        color: $blanco;
+        font-weight: $bold;
+        border-bottom: 2px solid $marron;
+      }
+      &:hover {
+        color: $blanco;
+      }
+    }
+  }
+  .logo {
+    font-family: $fuente_secundario;
+    color: $marron;
+    font-size: 3.5rem;
+  }
+}

@@ -1,0 +1,36 @@
+.seccion__principal {
+  @include grid(3, 0);
+  height: 100vh;
+  padding: 4rem 0;
+  .introduccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 125%;
+    .eslogan {
+      font-size: 5rem;
+      margin-top: 0;
+      font-weight: $bold;
+      color: $blanco;
+    }
+    .botton {
+      align-self: flex-start;
+      color: white;
+      display: inline-block;
+      padding: 1rem 2rem;
+      border: 1px solid $blanco;
+    }
+  }
+  .imagen {
+    position: relative;
+    grid-column: 2 / 4;
+    img {
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(15deg);
+    }
+  }
+}

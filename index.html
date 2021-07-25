@@ -1,28 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Salón de Belleza</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="build/css/app.css">
-</head>
-<body>
-
-    <div class="contenedor-estetica">
-        <div class="imagen"></div>
-        <div class="app">
-            <header class="header">
-                <h1>App Peluqueria</h1>
-            </header>
-            <nav class="tabs">
-                <button type="button">Servicios</button>
-                <button type="button">Información Cliente</button>
-                <button type="button">Resumen</button>
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ELTAJINE | Restaurante</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c8123a4756.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="build/css/app.css" />
+  </head>
+  <body>
+    <header>
+      <div class="contenedor barra">
+        <a href="/">
+          <p class="logo">ELTAJINE</p>
+        </a>
+        <nav class="navegacion">
+          <a href="#" class="active">Inicio</a>
+          <a href="#sobre-nosotros">Sobre nosotros</a>
+          <a href="#">Menú</a>
+          <a href="#">Eventos</a>
+          <a href="#">Contáctenos</a>
+          <a href="#">Reservas</a>
+        </nav>
+      </div>
+    </header>
+    <div class="contenedor seccion">
+      <section class="seccion seccion__principal">
+        <div class="introduccion">
+          <h2 class="eslogan">Un Restaurante Premium y Auténtico</h2>
+          <a href="#" class="botton">Reservar una mesa</a>
         </div>
+        <div class="imagen">
+          <img src="build/img/tajine from the top v2.0.webp" alt="" />
+        </div>
+      </section>
+      <section class="seccion seccion__sobrenosotros" id="sobre-nosotros">
+        <div class="vapor-agua">
+          <img src="build/img/barbacua smoke.webp" alt="" />
+        </div>
+        <div class="carta-sobrenosotros">
+          <div class="imagen"></div>
+          <div class="contenido">
+            <p class="titulo">Descubre</p>
+            <h2 class="subtitulo">Nuestra Historia</h2>
+            <p class="texto">
+              El mejor sitio para comer el tajine en Alicante. ya sea que se una
+              a nosotros para una cena romántica, una reunión de negocios, una
+              fiesta privada o simplemente una copa en el bar. Nuestro premium y
+              auténtico restaurante ofrece un servicio superior y una
+              experiencia gastronómica perfecta.
+            </p>
+            <a href="#"
+              >Descubre más <i class="fas fa-long-arrow-alt-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="rama-arbol">
+          <img src="build/img/rama de arbol.webp" alt="" />
+        </div>
+      </section>
+      <section class="seccion seccion__menu" id="menu">
+        <div class="introduccion">
+          <header>
+            <p class="titulo">Descubre</p>
+            <h2 class="subtitulo">Nuestro Menú</h2>
+          </header>
+          <p class="texto">
+            Pocas cosas se acercan a la alegría de nuestro tajine, cocinado de
+            forma sencilla con tierno y amoroso cuidado. No se preocupe porque
+            nuestros chefs tratan nuestra cocinan por amor y pasión. nuestros
+            restaurantes abiertos en las grandes ciudades son testimonio de
+            ello.
+          </p>
+        </div>
+        <div class="plato plato_entrada">
+          <div class="plato_entrada-introduccion">
+            <p class="titulo">Entrada</p>
+            <p class="texto">
+              Pan fresco con queso, aguacate y huevo por encima.
+            </p>
+          </div>
+          <div class="imagen">
+            <img src="build/img/plato de entrada.webp" alt="" />
+            <img src="build/img/rama de arbol.webp" alt="" />
+          </div>
+        </div>
+        <div class="plato plato_principal">
+          <div class="plato_principal-introduccion">
+            <p class="titulo">Plato Principal</p>
+            <p class="texto">
+              Nuestro delicioso tajine se sirve para satisfacer tu apetito
+            </p>
+          </div>
+          <div class="imagen">
+            <img src="build/img/plato principal tajine.webp" alt="" />
+            <img src="build/img/spices.webp" alt="" />
+          </div>
+        </div>
+        <div class="plato plato_acompanamiento">
+          <div class="plato_acompanamiento-introduccion">
+            <p class="titulo">Plato Acompañante</p>
+            <p class="texto">
+              Tenga una ensalada marroquí con cuatro verduras saludables para
+              complementar su tajine
+            </p>
+          </div>
+          <div class="imagen">
+            <img src="build/img/ensalada marroqui.jpg.webp" alt="" />
+            <img src="build/img/tomatoes.webp" alt="" />
+            <img src="build/img/basil.webp" alt="" />
+          </div>
+        </div>
+        <div class="plato plato_postre">
+          <div class="plato_postre-introduccion">
+            <p class="titulo">Postre</p>
+            <p class="texto">
+              Termina esta fantastica experiencia con Begrir, un postre marroqui
+              que se come con miel.
+            </p>
+          </div>
+          <div class="imagen">
+            <img src="build/img/poster marroqui.webp" alt="" />
+            <img src="build/img/miel.webp" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="seccion seccion__eventos" id="eventos">
+        <div class="vapor-agua">
+          <img src="build/img/barbacua smoke.webp" alt="" />
+        </div>
+        <div class="carta-sobrenosotros carta-eventos">
+          <div class="imagen"></div>
+          <div class="contenido">
+            <p class="titulo">Descubre</p>
+            <h2 class="subtitulo">Próximos Eventos</h2>
+            <p class="texto">
+              No solo puede obtener el mejor Tajine de la ciudad, sino que
+              también puede reunirse con sus viejos amigos mientras disfruta de
+              la comida que ofrecemos.
+            </p>
+            <p class="nombre">Fiesta Marroquí</p>
+            <p class="fecha">26 de Noviembre | Cena | Casual</p>
+            <a href="#"
+              >Más Eventos<i class="fas fa-long-arrow-alt-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="rama-arbol woody-spoon">
+          <img src="build/img/woody spoon.webp" alt="" />
+        </div>
+      </section>
+      <section class="ingredients">
+        <p class="titulo">Descubre</p>
+        <h2 class="subtitulo">los mejores ingredientes</h2>
+        <div class="texto">
+          Nos enorgullece enormemente obtener nuestros ingredientes con cuidado
+          para asegurarnos de que los sabores de nuestra comida sean lo más
+          deliciosos y auténticos posible. solo podemos lograr este nivel de
+          excelencia poniendo un nivel adicional de cuidado en los elementos de
+          nuestro menú que es difícil de encontrar en otros restaurantes.
+        </div>
+        <div class="imagen">
+          <img src="build/img/ingredients.webp" alt="" />
+        </div>
+      </section>
     </div>
-
+    <section class="reservaciones">
+      <div class="contenido">
+        <div class="texto">
+          <p class="titulo">Reservación</p>
+          <h2 class="subtitulo">Reserva Tu Tabla</h2>
+        </div>
+        <div class="boton">
+          <a href="#">Reserva en línea</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="contenedor footer">
+        <div class="ubicacion">
+          <h3>Ubicacion</h3>
+          <div class="primera-direccion">
+            <p class="eslogon">Empieza con una fresca ensalada</p>
+            <p class="detalle-direccion">1222 Rambella, Alicante</p>
+          </div>
+          <div class="segunda-direccion">
+            <p class="eslogon">El tajine mas que una comida</p>
+            <p class="detalle-direccion">1245 Calle alfonso, Alicante</p>
+          </div>
+        </div>
+        <div class="horario">
+          <h3>Horario</h3>
+          <div class="dias">
+            <p class="dentro-semana">Lunes - Jueves</p>
+            <p class="viernes">Viernes</p>
+            <p class="finde">Sabado - Domingo</p>
+          </div>
+          <div class="horas">
+            <p class="dentro-semana-horas">10 am - 9pm</p>
+            <p class="viernes-horas">4 pm - 11 pm</p>
+            <p class="finde-horas">10 am - 11 pm</p>
+          </div>
+        </div>
+        <div class="email barra">
+          <div class="logo">ELTAJINE</div>
+          <p class="email">reserva@eltajine.com</p>
+        </div>
+      </div>
+    </footer>
     <script src="build/js/bundle.min.js"></script>
-</body>
+  </body>
 </html>

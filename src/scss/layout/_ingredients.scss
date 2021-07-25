@@ -1,0 +1,21 @@
+.ingredients {
+  text-align: center;
+  padding: 4rem 0;
+  .titulo {
+    margin-bottom: 0;
+  }
+  .subtitulo {
+    color: $blanco;
+    margin-bottom: 2.5rem;
+  }
+  .texto {
+    max-width: 60%;
+    margin: 0 auto;
+    color: $blancoOscuro;
+  }
+  .imagen {
+    img {
+      width: 70%;
+    }
+  }
+}

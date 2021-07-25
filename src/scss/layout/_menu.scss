@@ -1,0 +1,195 @@
+.seccion__menu {
+  padding: 5rem 0;
+  .introduccion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10rem;
+    header {
+      flex-basis: calc(50% - 15rem);
+      justify-self: flex-end;
+      text-align: right;
+      .subtitulo {
+        color: $blanco;
+      }
+    }
+    .texto {
+      flex-basis: calc(50% - 15rem);
+      margin-bottom: 0;
+      color: $blancoOscuro;
+    }
+  }
+  .plato {
+    // margin-bottom: 10rem;
+    .texto {
+      color: $blancoOscuro;
+    }
+    &.plato_entrada,
+    &.plato_principal,
+    &.plato_acompanamiento,
+    &.plato_postre {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row-reverse;
+      align-items: center;
+      .imagen {
+        position: relative;
+        &::before {
+          content: "";
+          background: url(/build/img/salt3.webp);
+          background-size: cover;
+          background-position: center;
+          position: absolute;
+          left: 45%;
+          top: -30%;
+          display: inline-block;
+          width: 25rem;
+          height: 25rem;
+          z-index: -1;
+          filter: brightness(70%);
+          transform: rotate(45deg);
+        }
+        &::after {
+          content: "";
+          background: url(/build/img/salt3.webp);
+          background-size: cover;
+          background-position: center;
+          position: absolute;
+          left: 45%;
+          top: 70%;
+          display: inline-block;
+          width: 25rem;
+          height: 25rem;
+          z-index: -1;
+          filter: brightness(70%);
+          transform: rotate(45deg);
+        }
+        flex-basis: calc(50% - 2rem);
+        img:first-child {
+          width: 60%;
+          transform: translateX(50%);
+        }
+      }
+      .plato_entrada-introduccion,
+      .plato_principal-introduccion,
+      .plato_acompanamiento-introduccion,
+      .plato_postre-introduccion {
+        flex-basis: calc(50% - 2rem);
+        .titulo,
+        .texto {
+          width: 50%;
+          margin: auto;
+        }
+        .texto {
+          margin: 2rem auto;
+        }
+      }
+    }
+    &.plato_entrada {
+      .imagen {
+        img:last-of-type {
+          position: absolute;
+          width: 30%;
+          left: 15%;
+          top: 20%;
+          z-index: -1;
+          transform: rotate(-40deg);
+        }
+      }
+    }
+    &.plato_principal {
+      flex-direction: row;
+      align-items: center;
+      .imagen {
+        &::before {
+          left: -35%;
+          top: 20%;
+          transform: rotateZ(230deg);
+        }
+        &::after {
+          left: 5%;
+          top: 70%;
+          transform: rotateZ(130deg);
+        }
+        img:first-of-type {
+          width: 90%;
+          transform: unset;
+        }
+        img:nth-child(2) {
+          position: absolute;
+          width: 30%;
+          bottom: 10%;
+          left: 55%;
+          transform: rotate(-20deg);
+          z-index: -1;
+          filter: brightness(60%);
+        }
+      }
+      .plato_principal-introduccion {
+        padding-top: 0;
+      }
+    }
+    &.plato_acompanamiento {
+      .imagen {
+        position: relative;
+        text-align: center;
+        &::before {
+          left: 70%;
+          top: 0%;
+          transform: rotateZ(150deg) rotateX(180deg);
+        }
+        img:first-child {
+          width: 70%;
+          transform: unset;
+        }
+        img:nth-child(2),
+        img:nth-child(3) {
+          position: absolute;
+          width: 20%;
+          left: 12%;
+          bottom: 10%;
+          transform: rotate(60deg);
+          z-index: -1;
+          filter: brightness(60%);
+        }
+        img:nth-child(3) {
+          bottom: -7%;
+          left: 4%;
+          width: 20%;
+          z-index: 1;
+        }
+      }
+    }
+    &.plato_postre {
+      flex-direction: row;
+      .imagen {
+        &::before {
+          left: -35%;
+          top: 20%;
+          transform: rotateZ(230deg);
+        }
+        &::after {
+          left: 5%;
+          top: 50%;
+          transform: rotate(120deg);
+          width: 50rem;
+        }
+        position: relative;
+        text-align: center;
+        img:first-child {
+          width: 70%;
+          transform: unset;
+        }
+        img:nth-child(2) {
+          position: absolute;
+          width: 25%;
+          left: -2%;
+          bottom: 0%;
+          transform: rotate(2deg);
+          z-index: -1;
+          filter: brightness(60%);
+        }
+      }
+    }
+  }
+}
