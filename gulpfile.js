@@ -11,6 +11,7 @@ const imagemin = require('gulp-imagemin');
 const notify = require('gulp-notify');
 const cache = require('gulp-cache');
 const webp = require('gulp-webp');
+const browserSync = require('browser-sync').create();
 
 const paths = {
     scss: 'src/scss/**/*.scss',
@@ -60,6 +61,7 @@ function watchArchivos() {
     watch( paths.js, javascript );
     watch( paths.imagenes, imagenes );
     watch( paths.imagenes, versionWebp );
+    watch('*.html').on('change', browserSync.reload);
 }
   
 exports.css = css;
